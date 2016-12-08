@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_sholat_today"
+            android:title="@string/drawer_menu_jadwal_sholat_hari_ini"/>
+        <item
+            android:id="@+id/menu_sholat_monthly"
+            android:title="@string/menu_jadwal_sholat_bulanan"/>
+        <item
+            android:id="@+id/menu_drawer_setting"
+            android:title="@string/menu_pengaturan"/>
+        <item
+            android:id="@+id/menu_about"
+            android:title="@string/menu_about"/>
+    </group>
+</menu>
