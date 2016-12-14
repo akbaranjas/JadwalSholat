@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JadwalSholat</string>
+    <string name="app_name">Jadwal Sholat</string>
     <string name="drawer_menu_jadwal_sholat_hari_ini">Jadwal Sholat Hari ini</string>
     <string name="menu_jadwal_sholat_bulanan">Jadwal Sholat Bulanan</string>
     <string name="menu_setting">Setting</string>
@@ -7,4 +7,6 @@
     <string name="menu_pengaturan">Pengaturan</string>
     <string name="drawer_open">Buka</string>
     <string name="drawer_close">Tutup</string>
+    <string name="content_authority">com.akbaranjas.praytime</string>
+    <string name="text_splash_header">Jadwal Sholat v1.0</string>
 </resources>
