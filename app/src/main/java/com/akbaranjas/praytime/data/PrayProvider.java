@@ -29,7 +29,7 @@ public class PrayProvider extends ContentProvider {
         String content_authority = getContext().getResources().getString(R.string.content_authority);
         dbHelper = new DBHelper(getContext());
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI(content_authority , DBHelper.TBL_SETTING + "/#", URI_SETTING);
+        uriMatcher.addURI(content_authority , DBHelper.TBL_SETTING, URI_SETTING);
         uriMatcher.addURI(content_authority, DBHelper.TBL_METHOD , URI_METHOD);
         uriMatcher.addURI(content_authority, DBHelper.TBL_PRAY_TIME_TODAY + "/#", URI_TODAY_PRAY);
         uriMatcher.addURI(content_authority, DBHelper.TBL_PRAY_TIME_MONTHLY + "/#", URI_MONTHLY_PRAY);
@@ -46,8 +46,10 @@ public class PrayProvider extends ContentProvider {
                 retCursor = dbHelper.getReadableDatabase().query(
                         DBHelper.TBL_SETTING,
                         projection,
-                        DBHelper.TBL_SETTING + "." + DBHelper.COL_SETTING_KEY + " = ?",
-                        new String[] { uri.getLastPathSegment() },
+                        //DBHelper.TBL_SETTING + "." + DBHelper.COL_SETTING_KEY + " = ?",
+                        selection,
+                        //new String[] { uri.getLastPathSegment() },
+                        selectionargs,
                         null,
                         null,
                         sortorder

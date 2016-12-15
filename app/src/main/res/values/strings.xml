@@ -9,4 +9,6 @@
     <string name="drawer_close">Tutup</string>
     <string name="content_authority">com.akbaranjas.praytime</string>
     <string name="text_splash_header">Jadwal Sholat v1.0</string>
+    <string name="status_preparing_database_splash">Menyiapkan Database . . .</string>
+    <string name="status_preparing_setting_splash">Menyiapkan pengaturan . . .</string>
 </resources>

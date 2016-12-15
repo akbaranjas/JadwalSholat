@@ -10,6 +10,7 @@ public class Constant {
     public static String[] method_desc = {"Shia Ithna-Ashari", "University of Islamic Sciences, Karachi",
             "Islamic Society of North America (ISNA)", "Muslim World League (MWL)" , "Umm al-Qura, Makkah",
             "Egyptian General Authority of Survey" , "Institute of Geophysics, University of Tehran"};
+    public static String[] setting_key = {"latitude", "longitude", "method", "time_zone"};
 
     public Constant() {
     }

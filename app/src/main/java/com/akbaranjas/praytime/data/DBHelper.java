@@ -36,7 +36,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COL_MONTH = "month";
 
     private static final String CREATE_TBL_SETTING ="create table " + TBL_SETTING + " (" +
-            ID + " int, " +
             COL_SETTING_KEY + " text, " +
             COL_SETTING_VALUE + " text, " +
             "unique ("+ COL_SETTING_KEY+ ") on conflict replace);";
@@ -48,6 +47,11 @@ public class DBHelper extends SQLiteOpenHelper {
             "unique ("+ COL_METHOD_ID + ") on conflict replace);";
 
 
+    public static final String COL_IS_ALARM_FAJR = "is_alarm_fajr";
+    public static final String COL_IS_ALARM_DHUHUR = "is_alarm_dhuhur";
+    public static final String COL_IS_ALARM_ASR = "is_alarm_asr";
+    public static final String COL_IS_ALARM_MAGHRIB = "is_alarm_maghrib";
+    public static final String COL_IS_ALARM_ISYA = "is_alarm_isya";
     private static final String CREATE_TBL_PRAY_TIME ="create table " + TBL_PRAY_TIME_TODAY + " (" +
             ID + " int, " +
             COL_PRAY_DATE + " int, " +
@@ -60,7 +64,11 @@ public class DBHelper extends SQLiteOpenHelper {
             COL_ISHA_TIME + " text, " +
             COL_IMSHAK_TIME + " text, " +
             COL_MIDNIGHT_TIME + " text, " +
-            COL_IS_ALARM + " int, " +
+            COL_IS_ALARM_FAJR + " int, " +
+            COL_IS_ALARM_DHUHUR + " int, " +
+            COL_IS_ALARM_ASR + " int, " +
+            COL_IS_ALARM_MAGHRIB + " int, " +
+            COL_IS_ALARM_ISYA + " int, " +
             "unique ("+ COL_PRAY_DATE + ") on conflict replace);";
 
     private static final String CREATE_TBL_PRAY_TIME_MONTHLY ="create table " + TBL_PRAY_TIME_MONTHLY + " (" +
